@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <EditText
+            android:id="@+id/txt_employeeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:layout_marginRight="300px"
+            android:height="48dp"
+            android:layout_weight="0.50"
+            android:hint="Employee ID"
+            android:paddingTop="20px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name: " />
+
+        <EditText
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:hint="First Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name: "/>
+
+        <EditText
+            android:layout_width="179dp"
+            android:height="48dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name: ">
+        </EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120px"
+            android:paddingTop="20px"
+            android:text="Job Title: " />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110px"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <RadioButton
+            android:id="@+id/RBTN_Permanent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Permanent" />
+
+        <RadioButton
+            android:id="@+id/RBTN_Contract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="Contract" />
+
+        <RadioButton
+            android:id="@+id/RBTN_Temporary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Temporary" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120px"
+            android:paddingTop="20px"
+            android:text="Skills: " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px">
+        <CheckBox
+            android:id="@+id/CBOX_vBasic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visual Basic">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/CBOX_pytHon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/CBOX_cSharp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C#">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp">
+
+        <CheckBox
+            android:id="@+id/CBOX_jVa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/CBOX_cPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/CBOX_jScript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaScript">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/CBOX_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_BasicPay"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_marginLeft="130px"
+            android:hint="Basic Pay">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_TaxAllowance"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_marginLeft="130px"
+            android:hint="Tax Allowance">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_Deduction"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_marginLeft="130px"
+            android:hint="Deduction">
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Compute"
+            android:text="Compute"
+            android:layout_marginLeft="120px">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
