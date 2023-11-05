@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -6,29 +7,50 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310px"
+        android:layout_marginTop="50px"
+
+        >
+
+        <TextView
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:text="Employee Form"
+            android:textColor="#FF0000"
+            android:textSize="65px">
+
+        </TextView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150px"
-        android:layout_marginLeft="250px"
+        android:layout_marginTop="70px"
+        android:layout_marginLeft="150px"
         >
 
         <EditText
-            android:id="@+id/txt_studentNumber"
+            android:id="@+id/txt_employeeId"
             android:height="48dp"
             android:layout_width="195dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Student ID"
+            android:hint="ID"
             >
         </EditText>
 
         <Button
-            android:id="@+id/btn_searchStudentNumber"
+            android:id="@+id/btn_searchEmployeeId"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_bg"
             android:text="Search"
+            android:textColor="@color/white"
             >
+
         </Button>
 
     </LinearLayout>
@@ -36,32 +58,15 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
         >
 
         <EditText
-            android:id="@+id/txt_enterName"
+            android:id="@+id/txt_enterFullName"
             android:height="48dp"
             android:layout_width="201dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="250px"
-            android:hint="Enter Name"
-            >
-        </EditText>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-
-        <EditText
-            android:id="@+id/txt_enterCourse"
-            android:height="48dp"
-            android:layout_width="201dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="250px"
-            android:hint="Enter Course"
+            android:hint="Full Name"
             >
         </EditText>
 
@@ -70,47 +75,180 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20px"
+        android:layout_marginLeft="155px"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_Male"
+                android:layout_width="48dp"
+                android:layout_height="48dp"></RadioButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"></TextView>
+
+            <RadioButton
+                android:height="48dp"
+                android:id="@+id/rbtn_Female"
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+            </RadioButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"></TextView>
+
+            <RadioButton
+                android:id="@+id/rbtn_Other"
+                android:layout_width="48dp"
+                android:layout_height="48dp"></RadioButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"></TextView>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        >
+
+        <EditText
+            android:id="@+id/txt_currentWeight"
+            android:height="48dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Current Weight">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_Height"
+            android:height="48dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Height"
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="50px"
+        >
+
+        <EditText
+            android:id="@+id/txt_goalWeight"
+            android:height="48dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Goal Weight">
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_Age"
+            android:height="48dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="50px"
+        >
+
+        <EditText
+            android:id="@+id/txt_Phone"
+            android:height="48dp"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="50px"
+        >
+
+        <EditText
+            android:id="@+id/txt_Address"
+            android:height="48dp"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_marginLeft="50px"
-        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbox_memberShip"
+            android:layout_width="48dp"
+            android:layout_height="48dp"></CheckBox>
+
+        <TextView
+            android:height="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read, understood and accepted membership \n rules"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="390px"
+        android:layout_marginTop="70px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         >
 
         <Button
-            android:id="@+id/btn_save"
+            android:id="@+id/btn_submit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"></Button>
-
-        <Button
-            android:id="@+id/btn_update"
-            android:layout_marginLeft="13px"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Update"
-            >
-        </Button>
-
-        <Button
-            android:id="@+id/btn_delete"
-            android:layout_marginLeft="13px"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delete"
-            >
-        </Button>
-
-        <Button
-            android:id="@+id/btn_close"
-            android:layout_marginLeft="13px"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Close"
-            >
-        </Button>
-
-
-
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bg"
+            android:text="Submit"
+            android:textColor="@color/white"></Button>
     </LinearLayout>
 
 
